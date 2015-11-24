@@ -1,0 +1,11 @@
+Data Preprocessing:
+1. transform categorical data into numbers
+2. In the original data, for each person, the statistic data for every new window is recorded. For example: min, max, var, etc. However, data was only recorded in one row after starting a new window. In our data preprocessing, we need to fill up the cells with the statstics data for the same window. 
+3. Name and timestamp data is removed
+4. Normalized data to have mean 0 and covariance 1. (data normalization function provided by the prof for assignment 1)
+5. Dimension Reduction: 
+	I use PCA to reduce the dimension to 50. In the referenced paper, 17 attributes were chosen using sliding window algorithm.
+	The PCA reduction techniques is downloaded from a 3rd party toolbox at http://lvdmaaten.github.io/drtoolbox/
+Please add the drtoolbox folder in your matlab folder under toolbox, and click "add path" on matlab IDE to choose that folder. Please refer the readme file in the drtoolbox for further information if needed.
+6. output the file
+
